@@ -7,7 +7,7 @@ from IPython.display import display
 from IPython.display import Markdown
 
 import os
-os.environ['GEMINI_API_KEY'] = 'AIzaSyDlorZnGucz-DJQQ4sEEPOXagCHwZA2VB8'
+os.environ['GEMINI_API_KEY'] = ''
 
 import google.generativeai as genai
 genai.configure(api_key=os.environ['GEMINI_API_KEY'])
@@ -41,4 +41,5 @@ if submit:
         print(st.write(chunk.text))
         print("_"*80)
    
+
     st.write(chat.history)
